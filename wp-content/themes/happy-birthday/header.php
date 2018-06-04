@@ -50,6 +50,10 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php the_field('logo', 'option'); ?>" /></a></p>
+					<div class="sponsor">
+						<h2>Sponsored by:</h2>
+						<a href="https://www.univfy.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/library/images/univfy.png" /></a>
+					</div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

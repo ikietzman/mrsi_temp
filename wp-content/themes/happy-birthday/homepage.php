@@ -59,19 +59,22 @@
 							<div class="content_area">
 								<?php the_field('content_area_three'); ?>
 							</div>
-
-							<div class="video_row">
-								<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+							<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+							the_content();
+							endwhile; ?>
+							<?php endif; ?>
+							<!-- <div class="video_row">
+								<?php //echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
 							</div>
 							<div class="video_row">
-								<?php echo do_shortcode('[wonderplugin_carousel id="2"]'); ?>
+								<?php //echo do_shortcode('[wonderplugin_carousel id="2"]'); ?>
 							</div>
 							<div class="video_row">
-								<?php echo do_shortcode('[wonderplugin_carousel id="3"]'); ?>
+								<?php //echo do_shortcode('[wonderplugin_carousel id="3"]'); ?>
 							</div>
 							<div class="video_row">
-								<?php echo do_shortcode('[wonderplugin_carousel id="4"]'); ?>
-							</div>
+								<?php //echo do_shortcode('[wonderplugin_carousel id="4"]'); ?>
+							</div> -->
 
 
 

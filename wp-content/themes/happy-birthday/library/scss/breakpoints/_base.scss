@@ -202,7 +202,12 @@ HEADER STYLES
 .header {
 	text-align:center;
 }
-
+	.sponsor {
+		padding-bottom:1em;
+		img	{
+			max-width:100px;
+		}
+	}
 	#logo {
 		margin: 0.75em 0;
 		max-width:100%;
